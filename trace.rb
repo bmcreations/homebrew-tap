@@ -9,16 +9,16 @@ class Trace < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_darwin_amd64.tar.gz"
-      sha256 "ee4b01e9a79439a175878bf5175cbba4b4e7c68de0afc796e220ea2a5220cddd"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.1.0/trace_darwin_amd64.tar.gz"
+      sha256 "f2f4da2111cb7c91ce97e492b687e3882549fb23133330f0e172aa8400484fdb"
 
       define_method(:install) do
         bin.install "trace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_darwin_arm64.tar.gz"
-      sha256 "960d7ce0cb0134937b949f3975c40d49aeadd092f23eae7ad3357f567d4f288e"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.1.0/trace_darwin_arm64.tar.gz"
+      sha256 "6a17b278fae97bd7e05a20f2d6a5a7417779a7c76c290683ac442dd489e693d3"
 
       define_method(:install) do
         bin.install "trace"
@@ -28,15 +28,15 @@ class Trace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_linux_amd64.tar.gz"
-      sha256 "616dff2c3c2bc772d24afaf3c2d93cf7ee082487449b3470daca7d5589431785"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.1.0/trace_linux_amd64.tar.gz"
+      sha256 "7e0d281ec3ead1dd2ad7eccc532a4ab9ba78e16f8865772d951be7600b60df64"
       define_method(:install) do
         bin.install "trace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_linux_arm64.tar.gz"
-      sha256 "e5ffedda8f5a0b8499ab86bbd1b974ec52a519b71e800c8d5ffa17d4d02f9c94"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.1.0/trace_linux_arm64.tar.gz"
+      sha256 "855c072cfca1e2b0976a9fe597d0b26faef4e5cca7eb8c4f949a9ca648f32cb5"
       define_method(:install) do
         bin.install "trace"
       end
