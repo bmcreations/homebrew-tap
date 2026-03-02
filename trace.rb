@@ -10,7 +10,7 @@ class Trace < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_darwin_amd64.tar.gz"
-      sha256 "d0c924ddfdd3b171126021f97b6e0eb3527498fc4f57900b3daa4845c9e9a822"
+      sha256 "ee4b01e9a79439a175878bf5175cbba4b4e7c68de0afc796e220ea2a5220cddd"
 
       define_method(:install) do
         bin.install "trace"
@@ -18,7 +18,7 @@ class Trace < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_darwin_arm64.tar.gz"
-      sha256 "f518c897c862a1f13590f9857988d512b77c0e182b96c6339a8330ee7eb6de14"
+      sha256 "960d7ce0cb0134937b949f3975c40d49aeadd092f23eae7ad3357f567d4f288e"
 
       define_method(:install) do
         bin.install "trace"
@@ -29,14 +29,14 @@ class Trace < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_linux_amd64.tar.gz"
-      sha256 "584b3410910225aeeeef84d8b35a63e2fecceeec7afa78451703edff100428c4"
+      sha256 "616dff2c3c2bc772d24afaf3c2d93cf7ee082487449b3470daca7d5589431785"
       define_method(:install) do
         bin.install "trace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bmcreations/trace/releases/download/v0.1.0/trace_linux_arm64.tar.gz"
-      sha256 "5eb0eef5a1a1ce6345f750fc8a7464fdcb3577ddfcc30960e1f5f83d326f9bb7"
+      sha256 "e5ffedda8f5a0b8499ab86bbd1b974ec52a519b71e800c8d5ffa17d4d02f9c94"
       define_method(:install) do
         bin.install "trace"
       end
