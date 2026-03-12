@@ -5,20 +5,20 @@
 class Trace < Formula
   desc "CLI for the Trace install attribution and deep links platform"
   homepage "https://traceclick.io"
-  version "0.7.2"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.7.2/trace_darwin_amd64.tar.gz"
-      sha256 "7c4714a0f85fd9536fee518cbd4a4cdf6fb949b6d28fe2869335bffef2c929cc"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.8.0/trace_darwin_amd64.tar.gz"
+      sha256 "788a9bef197a131f46c3965237750b895eca9194291e52595288bcec17462ad0"
 
       define_method(:install) do
         bin.install "trace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.7.2/trace_darwin_arm64.tar.gz"
-      sha256 "a214308655c76b92bfc74c2c768cf489e8c13e3ea90c4048cb8388cd912268b5"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.8.0/trace_darwin_arm64.tar.gz"
+      sha256 "4c7e69a34c6501f52f46a493efbe963d1c324666e9ff8fee8d2a61745ca78daf"
 
       define_method(:install) do
         bin.install "trace"
@@ -28,15 +28,15 @@ class Trace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.7.2/trace_linux_amd64.tar.gz"
-      sha256 "7c24659ec0a4bbc662c7ab912d88d9f4d4ec4bb101a0e4aba66dd6779fe257ba"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.8.0/trace_linux_amd64.tar.gz"
+      sha256 "a7dd633c4f06a8104ddf3abf842a4d9dca22e444da30eafe99de023e9e99ddb9"
       define_method(:install) do
         bin.install "trace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.7.2/trace_linux_arm64.tar.gz"
-      sha256 "6659b52d2181728e3307c0ae04064f8478f2d8c16f5891f90d309e07fadb3017"
+      url "https://github.com/bmcreations/homebrew-tap/releases/download/v0.8.0/trace_linux_arm64.tar.gz"
+      sha256 "104d8f5210c72c5d0f0b232ad7c2715d68751b481163aec1d85b7625d33439e6"
       define_method(:install) do
         bin.install "trace"
       end
