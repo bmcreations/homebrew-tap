@@ -5,21 +5,21 @@
 class Loupe < Formula
   desc "Stream and drive Android devices, emulators and iOS simulators from a browser"
   homepage "https://github.com/bmcreations/loupe"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bmcreations/loupe/releases/download/v0.2.0/loupe_darwin_amd64.tar.gz"
-      sha256 "6db37aae51cc38be1a7a38b7dd5cac39682eea9d3c3abc3069c6c7c496e8c07d"
+      url "https://github.com/bmcreations/loupe/releases/download/v0.3.0/loupe_darwin_amd64.tar.gz"
+      sha256 "54160d4437e801d181624b190fcd9cb2b33d64f2f24631261d7a3cb7feb0710a"
 
       define_method(:install) do
         bin.install "loupe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bmcreations/loupe/releases/download/v0.2.0/loupe_darwin_arm64.tar.gz"
-      sha256 "bdb6afc069bcafa9bf44de7a48e9e677764322156d0ff8b55a1cfb97dbe8bfaf"
+      url "https://github.com/bmcreations/loupe/releases/download/v0.3.0/loupe_darwin_arm64.tar.gz"
+      sha256 "bbf620b24cfe604d41b999f3928978241322378544c16f116efde7d070ccc675"
 
       define_method(:install) do
         bin.install "loupe"
@@ -29,15 +29,15 @@ class Loupe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/loupe/releases/download/v0.2.0/loupe_linux_amd64.tar.gz"
-      sha256 "f932c406669ca6cdb7a7188c3af7b93d01d8c5afa3196e9afe272e6c159f0ef7"
+      url "https://github.com/bmcreations/loupe/releases/download/v0.3.0/loupe_linux_amd64.tar.gz"
+      sha256 "365bf3cd71ba3147e37a4828754a22181e616c0dadcf751d7350dc3ff4ce69d3"
       define_method(:install) do
         bin.install "loupe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bmcreations/loupe/releases/download/v0.2.0/loupe_linux_arm64.tar.gz"
-      sha256 "796d0a2f4c8878eebeb37acc3154c0499382f8891c9d5f6ece1036184c4aa1b4"
+      url "https://github.com/bmcreations/loupe/releases/download/v0.3.0/loupe_linux_arm64.tar.gz"
+      sha256 "048cc487f396c01d480d9aa18f5e9632acf7cd2bd781130779884a2fe69e81bd"
       define_method(:install) do
         bin.install "loupe"
       end
