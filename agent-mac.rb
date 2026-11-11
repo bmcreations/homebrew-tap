@@ -1,8 +1,8 @@
 class AgentMac < Formula
   desc "Headless macOS guests that agents drive and record, and people watch in a browser"
   homepage "https://github.com/bmcreations/agent-mac"
-  url "https://github.com/bmcreations/agent-mac/releases/download/v0.3.0/agent-mac-0.3.0-arm64-apple-darwin.tar.gz"
-  sha256 "4b4c29842e0e763036a18423982ce90608708be35e723a58d087e50cbfa0b79a"
+  url "https://github.com/bmcreations/agent-mac/releases/download/v0.3.1/agent-mac-0.3.1-arm64-apple-darwin.tar.gz"
+  sha256 "5377a017bfa18ce61f8b9cdb3992f2cbdf10d8d74534e82b0a3c23aad36c2b74"
   license "MIT"
 
   depends_on arch: :arm64
